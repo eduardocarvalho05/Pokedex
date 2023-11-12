@@ -27,6 +27,7 @@ O projeto está dividido em três páginas principais:
 - O site possui 3 páginas: Home, Pokedex e Detalhes.
 - Design segue as diretrizes propostas.
 - Fluxo de navegação conforme o fluxograma fornecido.
+- Responsividade
 
 ## Como Rodar o Projeto
 
@@ -38,14 +39,6 @@ O projeto está dividido em três páginas principais:
 
 ## Alguns prints do projeto
 
-   Versão desktop:
-
    ![Alt text](/PrintDoProjeto/Home.png) 
    ![Alt text](/PrintDoProjeto/Pokedex.png) 
    ![Alt text](/PrintDoProjeto/DetailsPage.png)
-
-   Versão mobile:
-
-   ![Alt text](/PrintDoProjeto/HomeMobile.png)
-   ![Alt text](/PrintDoProjeto/PokedexMobile.png)
-   ![Alt text](/PrintDoProjeto/DetailsPageMobile.png)
