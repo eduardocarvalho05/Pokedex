@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  position: relative;
-  min-height: 10rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  min-height: 9rem;
   width: 100%;
   font-size: 24px;
   font-weight: 700;
@@ -11,12 +14,13 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
+  padding: 10px;
 
   .logo {
   width: 320px;
   height: 120px;
 
+  
   @media only screen and (min-width: 480px) and (max-width: 768px){
   width: 220px;
   height: 100px;
@@ -56,7 +60,7 @@ export const Container = styled.header`
     @media only screen and (min-width: 480px) and (max-width: 768px){
     height: 60px;
     width: 180px;
-    margin-right: 0px;
+    margin-right: 28px;
     p {
     font-size: 24px;
     }
@@ -65,7 +69,7 @@ export const Container = styled.header`
   @media only screen and (max-width: 480px){
     height: 40px;
     width: 80px;
-    margin-right: 0px; 
+    margin-right: 8px; 
 
   p {
     font-size: 16px;
@@ -99,7 +103,7 @@ export const Container = styled.header`
     @media only screen and (min-width: 480px) and (max-width: 768px){
     height: 70px;
     width: 220px;
-    margin-left: 0px;
+    margin-left: 8px;
     
     p {
     font-size: 24px;
@@ -109,7 +113,7 @@ export const Container = styled.header`
     @media only screen and (max-width: 480px){
     height: 40px;
     width: 80px;
-    margin-left: 0px;
+    margin-left: 8px;
 
     p {
     font-size: 14px;
@@ -144,7 +148,7 @@ export const Container = styled.header`
     @media only screen and (max-width: 480px){
     height: 40px;
     width: 80px;
-    margin-left: 0px; 
+    margin-left: 8px; 
 
   p {
     font-size: 16px;
@@ -181,7 +185,8 @@ export const Container = styled.header`
     @media only screen and (min-width: 480px) and (max-width: 768px){
     height: 60px;
     width: 180px;
-    margin-right: 0px;
+    margin-right: 18px;
+    
     p {
     font-size: 24px;
     }
@@ -190,7 +195,7 @@ export const Container = styled.header`
   @media only screen and (max-width: 480px){
     height: 40px;
     width: 80px;
-    margin-right: 0px; 
+    margin-right: 8px; 
 
   p {
     font-size: 16px;
@@ -225,7 +230,7 @@ export const Container = styled.header`
     @media only screen and (min-width: 480px) and (max-width: 768px){
     height: 60px;
     width: 180px;
-    margin-right: 0px;
+    margin-right: 18px;
     p {
     font-size: 24px;
     }
@@ -234,7 +239,7 @@ export const Container = styled.header`
   @media only screen and (max-width: 480px){
     height: 40px;
     width: 80px;
-    margin-right: 0px; 
+    margin-right: 8px; 
 
   p {
     font-size: 16px;

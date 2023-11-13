@@ -54,7 +54,7 @@ export const CardContainer = styled.div`
     background-size: contain; /* Isso fará com que a imagem de fundo cubra todo o card */
     
     @media only screen and (min-width: 1025px) and (max-width: 1366px){
-    height: 70vh;
+    height: 80vh;
     width: 90vw;
     }
 
@@ -63,7 +63,7 @@ export const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 190vh;
+    height: 220vh;
     width: 94vw;
     }
 
@@ -72,7 +72,7 @@ export const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 180vh;
+    height: 220vh;
     width: 94vw;
     }
 
@@ -81,7 +81,7 @@ export const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 190vh;
+    height: 220vh;
     width: 94vw;
     }
 ;
