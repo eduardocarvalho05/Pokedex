@@ -10,7 +10,7 @@ export const BaseStatus = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 20px;
+  padding: 18px;
   gap: 20px;
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -26,7 +26,7 @@ export const BaseStatus = styled.div`
     height: 500px;
     order: 2;
   }
-`
+`;
 
 const Statbar = styled.div`
   display: flex;
@@ -39,14 +39,19 @@ const Statbar = styled.div`
     font-size: 14px;
     color: black;
     font-weight: bold;
+    width: 50%; /* Tamanho fixo para todos os parágrafos */
   }
-  
-  &.total-highlight { /* Estilo para destacar o total */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffc107; /* Cor de destaque */
-  border-radius: 12px;
+
+  &.total-highlight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc107;
+    border-radius: 12px;
+    height: 10%;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
   }
 `;
 
@@ -56,7 +61,7 @@ const Statfill = styled.div`
   justify-content: center;
   border-radius: 10px;
   height: 100%;
-  width: 100%;
+  width: 50%; 
   background-color: #4caf50;
   text-align: center;
   color: #fff;
@@ -67,55 +72,45 @@ const BarraStatus = ({ pokemon }) => {
         <BaseStatus>
             <h1>Base Stats</h1>
             <Statbar>
-                <div>
-                    <p>HP:</p>
-                </div>
+                <p>HP:</p>
                 <Statfill style={{ width: `${pokemon.stats[0].base_stat}%` }}>
                     {pokemon.stats[0].base_stat}
                 </Statfill>
             </Statbar>
             <Statbar>
-                <p>Attack</p>
+                <p>Attack:</p>
                 <Statfill style={{ width: `${pokemon.stats[1].base_stat}%` }}>
                     {pokemon.stats[1].base_stat}
                 </Statfill>
             </Statbar>
             <Statbar>
-                <div>
-                    <p>Defense:</p>
-                </div>
+                <p>Defense:</p>
                 <Statfill style={{ width: `${pokemon.stats[2].base_stat}%` }}>
                     {pokemon.stats[2].base_stat}
                 </Statfill>
             </Statbar>
             <Statbar>
-                <div>
-                    <p>Sp.Attack:</p>
-                </div>
+                <p>Sp.Attack:</p>
                 <Statfill style={{ width: `${pokemon.stats[3].base_stat}%` }}>
                     {pokemon.stats[3].base_stat}
                 </Statfill>
             </Statbar>
             <Statbar>
-                <div>
-                    <p>Sp.Defense:</p>
-                </div>
+                <p>Sp.Defense:</p>
                 <Statfill style={{ width: `${pokemon.stats[4].base_stat}%` }}>
                     {pokemon.stats[4].base_stat}
                 </Statfill>
             </Statbar>
             <Statbar>
-                <div>
-                    <p>Speed:</p>
-                </div>
+                <p>Speed:</p>
                 <Statfill style={{ width: `${pokemon.stats[5].base_stat}%` }}>
                     {pokemon.stats[5].base_stat}
                 </Statfill>
             </Statbar>
-            <Statbar className="total-highlight"> {/* Adicione a classe "total-highlight" para destacar o total */}
-                <p>
+            <Statbar className="total-highlight">
+                <div>
                     Total: {pokemon.stats.reduce((total, stat) => total + stat.base_stat, 0)}
-                </p>
+                </div>
             </Statbar>
         </BaseStatus>
     );

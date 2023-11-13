@@ -63,7 +63,7 @@ export const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 180vh;
+    height: 190vh;
     width: 94vw;
     }
 
@@ -81,7 +81,7 @@ export const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 180vh;
+    height: 190vh;
     width: 94vw;
     }
 ;
