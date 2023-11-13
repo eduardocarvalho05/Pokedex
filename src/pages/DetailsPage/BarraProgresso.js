@@ -117,3 +117,7 @@ const BarraStatus = ({ pokemon }) => {
 };
 
 export default BarraStatus;
+
+
+
+/////
