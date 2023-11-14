@@ -41,7 +41,9 @@ function PokemonDetails() {
               ? getColors(pokemon.types[0].type.name)
               : "";
 
-            const imgPokemon = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`;
+            // const imgPokemon = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`;
+
+            const imgPokemon = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`
 
             return (
               <CardContainer key={pokemon.name} style={{ backgroundColor }}>

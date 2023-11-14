@@ -5,7 +5,7 @@ export const Container = styled.header`
   top: 0;
   z-index: 1;
   background-color: white;
-  min-height: 9rem;
+  min-height: 10rem;
   width: 100%;
   font-size: 24px;
   font-weight: 700;
@@ -15,6 +15,15 @@ export const Container = styled.header`
   justify-content: center;
   flex-wrap: wrap;
   padding: 10px;
+
+  @media only screen and (min-width: 480px) and (max-width: 768px){
+    min-height: 8rem;
+  }
+  
+  @media only screen and (max-width: 480px){
+    min-height: 6rem;
+    }
+
 
   .logo {
   width: 320px;
@@ -28,7 +37,7 @@ export const Container = styled.header`
   
   @media only screen and (max-width: 480px){
   width: 120px;
-  height: 40px;  
+  height: 46px;  
     }
 
   }

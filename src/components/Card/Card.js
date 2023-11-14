@@ -40,7 +40,10 @@ function Card(props) {
     ? getColors(pokemon.types[0].type.name)
     : "#FFFFFF"; // Ou outra cor padrão se não houver tipos definidos
 
-  const imagensPokemons = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`
+  const imagemPokemons = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`
+
+
+  // const imagemPokemons = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`
 
 
   return (
@@ -68,7 +71,12 @@ function Card(props) {
           )}
         </InfoPokemons>
 
-        <PokemonImage src={imagensPokemons} alt={pokemon.name} />
+        <PokemonImage src={imagemPokemons} alt={pokemon.name} />
+
+        {/* <PokemonImage
+          src={pokemon.sprites.other["official-artwork"].front_default}
+          alt={pokemon.name}
+        /> */}
 
         <Buttons>
 
