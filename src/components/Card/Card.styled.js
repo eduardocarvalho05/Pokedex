@@ -85,6 +85,7 @@ export const PokemonImage = styled.img`
   }
 `;
 
+
 export const Buttons = styled.div`
   display: flex;
   flex-direction: row;
@@ -164,4 +165,22 @@ export const CapturarOverlay = styled.div`
   align-items: center;
   z-index: 999; /* Certifique-se de que está na frente de outros elementos */
 `
+
+export const Carregando = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* position: fixed;  */
+
+  img {
+    height: 100%;
+    width: 40%;
+  }
+
+  h3 {
+    text-align: center;
+    color: black;
+  }
+`;
 
